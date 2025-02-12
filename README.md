@@ -46,7 +46,7 @@ If the following are not installed, follow the instructions below to set up your
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/lydia-petersen/Typing-Game.git
    ```
 2. Install NPM packages
    ```sh
@@ -78,7 +78,7 @@ Lydia Petersen
 
 LinkedIn: https://www.linkedin.com/in/lydia-petersen-189434241/
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/lydia-petersen/Typing-Game](https://github.com/lydia-petersen/Typing-Game)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
