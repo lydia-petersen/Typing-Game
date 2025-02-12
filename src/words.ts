@@ -1,0 +1,128 @@
+import { random } from "simplekit/utility";
+/**
+ * The top 100 most common words in english!
+ * https://www.espressoenglish.net/the-100-most-common-words-in-english/
+ */
+const words = [
+  "time",
+  "year",
+  "people",
+  "way",
+  "day",
+  "man",
+  "thing",
+  "woman",
+  "life",
+  "child",
+  "world",
+  "school",
+  "state",
+  "family",
+  "student",
+  "group",
+  "country",
+  "problem",
+  "hand",
+  "part",
+  "place",
+  "case",
+  "week",
+  "company",
+  "system",
+  "program",
+  "question",
+  "work",
+  "government",
+  "number",
+  "night",
+  "point",
+  "home",
+  "water",
+  "room",
+  "mother",
+  "area",
+  "money",
+  "story",
+  "fact",
+  "month",
+  "lot",
+  "right",
+  "study",
+  "book",
+  "eye",
+  "job",
+  "word",
+  "business",
+  "issue",
+  "side",
+  "kind",
+  "head",
+  "house",
+  "service",
+  "friend",
+  "father",
+  "power",
+  "hour",
+  "game",
+  "line",
+  "end",
+  "member",
+  "law",
+  "car",
+  "city",
+  "community",
+  "name",
+  "president",
+  "team",
+  "minute",
+  "idea",
+  "kid",
+  "body",
+  "information",
+  "back",
+  "parent",
+  "face",
+  "others",
+  "level",
+  "office",
+  "door",
+  "health",
+  "person",
+  "art",
+  "war",
+  "history",
+  "party",
+  "result",
+  "change",
+  "morning",
+  "reason",
+  "research",
+  "girl",
+  "guy",
+  "moment",
+  "air",
+  "teacher",
+  "force",
+  "education",
+  "goose",    // + a few fun ones!
+  "waterloo",
+  "waterwaterwater",
+  "loolooloo",
+  "honk",
+];
+
+/**
+ * Creates a list of n random english words.
+ * @param n number of words to generate
+ * @returns a list of n random words
+ */
+export function generateRandomWords(n: number): string[] {
+  const randomWords: string[] = [];
+
+  for (let i = 0; i < n; i++) {
+    const randomIndex = Math.floor(random(1) * words.length);
+    randomWords.push(words[randomIndex]);
+  }
+
+  return randomWords;
+}
